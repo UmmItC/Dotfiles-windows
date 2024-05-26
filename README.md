@@ -7,3 +7,7 @@ GlazeWm
 Taskbar is useless, use launcher instead.
 
 - [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher)
+
+## Screenshots
+
+![Screenshots](./images/screenshots.png)
