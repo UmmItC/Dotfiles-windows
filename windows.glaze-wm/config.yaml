@@ -50,14 +50,22 @@ bar:
   font_family: "Segoe UI"
   font_size: "13px"
   padding: "4px 6px"
-  offset_x: "0"
-  offset_y: "0"
-  border_radius: "0"
+  offset_x: "10"
+  offset_y: "10"
+  border_radius: "10"
   components_left:
     - type: "workspaces"
       focused_workspace_background: "#ffffff33"
       displayed_workspace_background: "#00000033"
       default_workspace_background: "transparent"
+    - type: "cpu"
+      label: " CPU: {percent_usage}% | "
+      # How often this counter is refreshed.
+      refresh_interval_ms: 1000
+    - type: "clock"
+      # Documentation on formatting date/time string:
+      # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
+      time_formatting: "HH:MM tt  ddd MMM d yyyy"
   components_center:
     - type: "window title"
   components_right:
@@ -72,10 +80,11 @@ bar:
       background: "#ffffff33"
       margin: "0 4px 0 0"
       padding: "0 8px"
-    - type: "clock"
-      # Documentation on formatting date/time string:
-      # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
-      time_formatting: "HH:MM tt  ddd MMM d yyyy"
+    - type: "volume"
+      label_low: "🔊{volume_level}%"
+      label_medium: "🔊{volume_level}%"
+      label_high: "🔊{volume_level}%"
+      label_mute: "🔊{volume_level}%"
 
 workspaces:
   - name: "1"
