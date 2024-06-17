@@ -65,7 +65,7 @@ bar:
     - type: "clock"
       # Documentation on formatting date/time string:
       # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
-      time_formatting: "HH:MM tt  ddd MMM d yyyy"
+      time_formatting: "hh:mm tt  ddd MMM d yyyy"
   components_center:
     - type: "window title"
   components_right:
